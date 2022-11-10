@@ -1,7 +1,7 @@
 const Frame = ({ children, ...props }) => {
     return (
         <div className="frame-container">
-            <div className="frame">
+            <div className="frame" style={props.style ?? {}}>
                 { children }
             </div> 
             <div className="frame-description">
