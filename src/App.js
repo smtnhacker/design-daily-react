@@ -16,6 +16,9 @@ function App() {
           justifyContent: "center" }}>
           <Components.HyperplexMenu01.Component />
       </Frame>
+      <Frame {...Components.WideSideNav01.meta}>
+        <Components.WideSideNav01.Component />
+      </Frame>
     </div>
   );
 }
