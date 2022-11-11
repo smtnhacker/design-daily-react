@@ -17,6 +17,10 @@ if not name[0].isalpha() or name[0].lower () == name[0]:
     print("The name must start with a capital letter.")
     sys.exit()
 
+if not name.isalnum():
+    print("The name must be in PascalCase and contains only letters and numbers.")
+    sys.exit()
+
 # Must not exist yet
 directory = os.fsencode("src/components")
 for file in os.listdir(directory):
