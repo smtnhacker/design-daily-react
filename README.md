@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Design Daily Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Just a frontend practice. Currently, it is in React but I try to be framework-agnostic in these exercises.
 
-## Available Scripts
+## Scripts
 
-In the project directory, you can run:
+**Starting the server**
 
-### `npm start`
+If you want to run a development server and look at my work, you can run:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm run start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Generating a component**
 
-### `npm test`
+If you want to start your own design daily challenge, you can use a small CLI that I've built. Currently, it's written in python so make sure to have at least Python 2.8 installed! The CLI is currently in its very early phase, so right now, it can only generate boilerplates. Just run the following command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+python3 generate.py ComponentName
+```
 
-### `npm run build`
+_Note: Make sure that the name follows proper React Component naming practices._
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Example
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+python3 generate.py Mycomponent
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This will generate 2 files: `MyComponent.jsx` and a `styles.module.css`. You can find them in the `src/components/MyComponent` folder (do not rename the folders!). This will also rewrite `components/index.js` to import and export the necessary files. Just refer to `App.js` to see how these are used.
