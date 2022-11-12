@@ -1,0 +1,136 @@
+.container {
+    --white: #F8F8F8;
+    --primary: #252654;
+    --yellow: #FACE69;
+    --gray: #9B9CB1;
+
+    color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    box-sizing: border-box;
+    position: absolute;
+    width: 500px;   
+    min-height: 600px;
+    left: calc(50% - 250px);
+    top: 80px;
+    padding: 64px;
+    background-color: var(--white);
+    border-radius: 32px;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--gray) 0px 8px 24px;;
+}
+
+.container * {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.header > .title {
+    font-size: 1.7rem;
+    width: 450px;
+}
+
+.header > .average {
+    background-color: white;
+    padding: 24px 12px;
+    width: 200px;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.header > .average > .average-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header > .average > .average-title {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.search-container > label {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 6px 18px;
+    border-radius: 24px;
+}
+
+.search-container > label > i {
+    padding-right: 6px;
+}
+
+.search {
+    padding: 12px 6px;
+    border: none;
+    width: 300px;
+    color: var(--primary);
+}
+
+.search::placeholder {
+    color: var(--gray);
+}
+
+.search:focus {
+    outline: var(--gray) solid 1px;
+}
+
+.rating-container {
+    padding: 12px;
+}
+
+.rating-list {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-item {
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+}
+
+.rating-item > meter {
+    margin: 0px 12px;
+    width: 70%;
+}
+
+.rating-item ::-webkit-meter-optimum-value {
+    background-color: var(--yellow);
+}
+
+.cta {
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 24px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.cta:hover {
+    color: var(--yellow);
+}
+
+.cta:active {
+    background-color: var(--yellow);
+    color: white;
+}

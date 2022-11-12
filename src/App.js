@@ -19,6 +19,9 @@ function App() {
       <Frame {...Components.WideSideNav01.meta}>
         <Components.WideSideNav01.Component />
       </Frame>
+      <Frame {...Components.RatingSection.meta} style={{ height: "750px" }}>
+        <Components.RatingSection.Component />
+      </Frame>
     </div>
   );
 }
