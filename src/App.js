@@ -22,6 +22,13 @@ function App() {
       <Frame {...Components.RatingSection.meta} style={{ height: "750px" }}>
         <Components.RatingSection.Component />
       </Frame>
+      <Frame {...Components.ButtonCoolHover01.meta} style={{ 
+        display: "flex", 
+        flexDirection: "column", 
+        justifyContent: "center",
+        alignItems: "center" }}>
+          <Components.ButtonCoolHover01.Component />
+      </Frame>
     </div>
   );
 }
