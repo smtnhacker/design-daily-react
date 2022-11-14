@@ -29,6 +29,14 @@ function App() {
         alignItems: "center" }}>
           <Components.ButtonCoolHover01.Component />
       </Frame>
+      <Frame {...Components.SimpleAnalytics.meta} style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center"
+      }}>
+        <Components.SimpleAnalytics.Component />
+      </Frame>
     </div>
   );
 }
