@@ -37,6 +37,14 @@ function App() {
       }}>
         <Components.SimpleAnalytics.Component />
       </Frame>
+      <Frame {...Components.FilterModal01.meta} style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center"
+      }}>
+        <Components.FilterModal01.Component />
+      </Frame>
     </div>
   );
 }
