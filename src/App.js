@@ -2,6 +2,15 @@ import './App.css';
 import Frame from './components/Frame';
 import * as Components from "./components";
 
+const STYLES = {
+  CENTER: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center"
+  }
+}
+
 function App() {
   return (
     <div className="App">
@@ -22,28 +31,17 @@ function App() {
       <Frame {...Components.RatingSection.meta} style={{ height: "750px" }}>
         <Components.RatingSection.Component />
       </Frame>
-      <Frame {...Components.ButtonCoolHover01.meta} style={{ 
-        display: "flex", 
-        flexDirection: "column", 
-        justifyContent: "center",
-        alignItems: "center" }}>
+      <Frame {...Components.ButtonCoolHover01.meta} style={STYLES.CENTER}>
           <Components.ButtonCoolHover01.Component />
       </Frame>
-      <Frame {...Components.SimpleAnalytics.meta} style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center"
-      }}>
+      <Frame {...Components.SimpleAnalytics.meta} style={STYLES.CENTER}>
         <Components.SimpleAnalytics.Component />
       </Frame>
-      <Frame {...Components.FilterModal01.meta} style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center"
-      }}>
+      <Frame {...Components.FilterModal01.meta} style={STYLES.CENTER}>
         <Components.FilterModal01.Component />
+      </Frame>
+      <Frame {...Components.DropdownOptions.meta} style={STYLES.CENTER}>
+        <Components.DropdownOptions.Component />
       </Frame>
     </div>
   );
