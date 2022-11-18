@@ -56,9 +56,10 @@ export default {name}
 
 with open(f"src/components/{name}/{name}.jsx", "w+") as jsx:
     jsx.write(template)
+    print(f"Generated --------- src/components/{name}/{name}.jsx")
 
 with open(f"src/components/{name}/styles.module.css", "w+") as styles:
-    pass
+    print(f"Generated --------- src/components/{name}/styles.module.css")
 
 # import-export the component
 with open(f"src/components/index.js", "r") as index:
@@ -70,3 +71,4 @@ with open(f"src/components/index.js", "r") as index:
 
 with open(f"src/components/index.js", "w") as index:
     index.write(new_imports + "\n//\n" + new_exports)
+    print(f"Modified  --------- src/components/index.js")
