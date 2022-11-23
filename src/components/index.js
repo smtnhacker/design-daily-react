@@ -6,6 +6,7 @@ import _ButtonCoolHover01, { meta as ButtonCoolHover01meta } from "./ButtonCoolH
 import _SimpleAnalytics, { meta as SimpleAnalyticsmeta } from "./SimpleAnalytics/SimpleAnalytics"
 import _FilterModal01, { meta as FilterModal01meta } from "./FilterModal01/FilterModal01"
 import _DropdownOptions, { meta as DropdownOptionsmeta } from "./DropdownOptions/DropdownOptions"
+import _PricingCard01, { meta as PricingCard01meta } from "./PricingCard01/PricingCard01"
 //
 export const SideNav01 = { Component: _SideNav01, meta: SideNav01meta };
 export const HyperplexMenu01 = { Component: _HyperplexMenu01, meta: HyperplexMenu01meta };
@@ -15,3 +16,4 @@ export const ButtonCoolHover01 = { Component: _ButtonCoolHover01, meta: ButtonCo
 export const SimpleAnalytics = { Component: _SimpleAnalytics, meta: SimpleAnalyticsmeta };
 export const FilterModal01 = { Component: _FilterModal01, meta: FilterModal01meta };
 export const DropdownOptions = { Component: _DropdownOptions, meta: DropdownOptionsmeta };
+export const PricingCard01 = { Component: _PricingCard01, meta: PricingCard01meta };

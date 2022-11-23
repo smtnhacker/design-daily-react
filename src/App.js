@@ -43,6 +43,9 @@ function App() {
       <Frame {...Components.DropdownOptions.meta} style={STYLES.CENTER}>
         <Components.DropdownOptions.Component />
       </Frame>
+      <Frame {...Components.PricingCard01.meta} style={STYLES.CENTER}>
+        <Components.PricingCard01.Component />
+      </Frame>
     </div>
   );
 }
